@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Полина Цветкова](https://up.htmlacademy.ru/adaptive/27/user/2075923).
-* Наставник: `Неизвестно`.
+* Наставник: `Павелю Нюкало`(https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
