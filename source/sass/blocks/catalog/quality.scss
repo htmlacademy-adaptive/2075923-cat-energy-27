@@ -1,0 +1,35 @@
+.quality__button {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.quality__description-text {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.quality__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quality__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.quality__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quality__title {
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
