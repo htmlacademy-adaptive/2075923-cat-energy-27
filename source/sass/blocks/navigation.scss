@@ -1,0 +1,16 @@
+.navigation {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-style: normal;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.navigation__list {
+  margin: 0 auto;
+  padding: 0;
+}

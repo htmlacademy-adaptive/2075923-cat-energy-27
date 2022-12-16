@@ -1,0 +1,48 @@
+.promo {
+  width: 100%;
+  background-image: url("../img/cat-main-cover.jpeg");
+  background-repeat: no-repeat;
+}
+
+.promo__button {
+  text-decoration: none;
+  text-align: center;
+  padding: 7px 44px;
+}
+
+.promo__headline {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.promo__information-conteiner {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 27px;
+  padding-bottom: 20px;
+}
+
+.promo__product-pic {
+  margin: 0 auto;
+}
+
+.promo__slogan {
+  font-family: "Oswald", sans-serif;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  max-width: 198px;
+  color: #ffffff;
+}

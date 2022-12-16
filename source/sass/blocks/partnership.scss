@@ -1,0 +1,22 @@
+.partnership {
+  display: flex;
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.partnership__adress {
+  line-height: 20px;
+  color: #444444;
+  font-style: normal;
+}
+
+.partnership__text {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 16px;
+  margin: 0;
+}
