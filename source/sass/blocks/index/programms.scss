@@ -1,38 +1,34 @@
-.programms__button {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: inherit;
-  width: 133px;
-  margin-left: 20px;
-  display: block;
-}
-
 .programms__conteiner {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
-}
 
-.programms__discription {
-  width: 227px;
-  margin: 0 auto;
-  margin-left: 20px;
-  line-height: 18px;
-  color: #444444;
-}
+  @media (min-width: 768px) {
+    width: 708px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 
-.programms__item {
-  background-color: #f2f2f2;
-  margin-bottom: 20px;
+  @media (min-width: 1220px) {
+    width: 1220px;
+  }
 }
 
 .programms__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: 1220px) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
+.programms__item {
+  background-color: #f2f2f2;
+  margin-bottom: 20px;
 }
 
 .programms__title {
@@ -42,5 +38,75 @@
   text-transform: uppercase;
   text-align: center;
   padding-top: 30px;
+  padding-bottom: 30px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    padding-top: 77px;
+    padding-left: 53px;
+    padding-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: 1220px) {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+.programms__discription {
+  max-width: 227px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 auto;
+  margin-left: 20px;
+  line-height: 18px;
+  color: #444444;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+    padding-left: 53px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    margin: 0;
+  }
+
+  @media (min-width: 1220px) {
+    max-width: 457px;
+  }
+}
+
+.programms__button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 20px;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  svg {
+    padding-left: 15px;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 53px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: 1220px) {
+    padding-top: 0;
+    padding-bottom: 55px;
+  }
 }

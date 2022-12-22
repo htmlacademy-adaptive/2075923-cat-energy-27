@@ -8,4 +8,10 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: 1220px) {
+    display: flex;
+    width: 1125px;
+    justify-content: space-between;
+  }
 }

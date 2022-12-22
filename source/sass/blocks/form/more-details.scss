@@ -1,0 +1,17 @@
+.more-details__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    column-gap: 123px;
+  }
+
+  @media (min-width: 1220px) {
+    display: flex;
+    width: 1125px;
+    justify-content: space-between;
+  }
+}

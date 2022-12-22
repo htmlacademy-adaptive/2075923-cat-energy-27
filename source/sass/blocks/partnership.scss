@@ -1,14 +1,52 @@
 .partnership {
+  background-color: #ffffff;
   display: flex;
+  justify-content: space-between;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+
+  @media (min-width: 768px) {
+    width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 565px;
+    padding: 0;
+  }
+
+  &--modification {
+    @media (min-width: 768px) {
+      background-color: transparent;
+    }
+
+    @media (min-width: 1220px) {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .partnership__adress {
   line-height: 20px;
   color: #444444;
   font-style: normal;
+
+  @media (min-width: 768px) {
+    max-width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: 1220px) {
+    width: 155px;
+    padding-top: 56px;
+    padding-right: 80px;
+    padding-bottom: 63px;
+  }
 }
 
 .partnership__text {
@@ -19,4 +57,17 @@
   line-height: 20px;
   font-size: 16px;
   margin: 0;
+
+  @media (min-width: 768px) {
+    max-width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 155px;
+    padding-top: 59px;
+    padding-left: 80px;
+    padding-bottom: 63px;
+  }
 }

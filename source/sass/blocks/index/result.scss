@@ -1,21 +1,64 @@
 .result {
   background-color: #eaeaea;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
+  }
+  // не пониаю почему на tablet версии жесткий градиент, а в десктопе с переходом
+  @media (min-width: 1220px) {
+    width: 1440px;
+    background: linear-gradient(to bottom, #ffffff 10px, #eaeaea 462px);
+  }
 }
 
 .result__conteiner {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1220px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1220px;
+  }
+}
+
+.result__text-container {
+  @media (min-width: 1220px) {
+    width: 50%;
+  }
 }
 
 .result__description {
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: 1220px) {
+    max-width: 436px;
+  }
 }
 
 .result__list {
   display: flex;
+  justify-content: space-between;
   width: 280px;
+  margin: 0;
 }
 
 .result__title {
@@ -25,8 +68,14 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 63px;
+  }
 }
 
 .result__total {
@@ -36,4 +85,36 @@
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.result__total-description {
+  margin: 0;
+}
+
+.result__total-price {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    text-align: right;
+  }
+}
+
+.result__specification-total-conteiner {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 99px;
+  }
+}
+
+.result__slider-conteiner {
+  @media (min-width: 1220px) {
+    width: 50%;
+  }
 }

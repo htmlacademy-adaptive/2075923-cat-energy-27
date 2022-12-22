@@ -10,10 +10,48 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    padding-bottom: 80px;
+  }
 }
 
 .extra-goods__wrapper {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    width: 709px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.extra-goods__aside-wrapper {
+  @media (min-width: 768px) {
+    width: 709px;
+  }
+}
+
+// не понимаю почему не срабатывает наложение
+.extra-goods__aside-pic::before {
+  content: "";
+  width: 709px;
+  height: 30px;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.extra-goods__card-aside-wrapper {
+  @media (min-width: 1220px) {
+    width: 1220px;
+    display: flex;
+  }
 }

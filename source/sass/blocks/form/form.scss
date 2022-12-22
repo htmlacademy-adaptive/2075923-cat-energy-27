@@ -2,6 +2,11 @@
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .form__button {
@@ -14,6 +19,11 @@
   font-style: italic;
   font-size: 24px;
   line-height: 26px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__list {
@@ -35,4 +45,40 @@
   line-height: 18px;
   text-transform: uppercase;
   width: 226px;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 66px;
+    width: 323px;
+  }
+}
+
+.form__fields {
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 66px;
+    width: 630px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+  }
+}
+
+.form__interview-conteiner {
+  @media (min-width: 1220px) {
+    display: grid;
+    grid-template-columns: 569px 568px;
+    column-gap: 80px;
+    padding-bottom: 69px;
+  }
+}
+
+.form__label {
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
