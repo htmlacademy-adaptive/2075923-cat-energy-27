@@ -12,6 +12,7 @@
 
   @media (min-width: 1220px) {
     width: 244px;
+    grid-column: -2/-1;
   }
 }
 
@@ -26,37 +27,37 @@
   }
 }
 
-.quality__description-wrapper {
-  display: flex;
-  justify-content: space-between;
+.quality__description-cost {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
 
-  @media (min-width: 1220px) {
-    width: 285px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
+
 .quality__item {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 140px 140px;
 
   @media (min-width: 768px) {
     width: 709px;
     display: grid;
-    grid-template-columns: repeat(2, 316px);
+    grid-template-columns: 400px 181px 43px;
     padding-top: 26px;
     padding-bottom: 28px;
     border-top: 1px solid #cdcdcd;
     align-items: center;
-    justify-content: center;
   }
 
   @media (min-width: 1220px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 17px;
-    width: 896px;
+    width: 895px;
+    display: grid;
+    grid-template-columns: 324px 240px 80px 244px;
+    align-content: flex-start;
   }
 }
 
@@ -77,15 +78,14 @@
   }
 
   @media (min-width: 1220px) {
-    width: 896px;
-    display: flex;
-    flex-direction: column;
+    display: block;
+    width: 894px;
     padding-right: 80px;
   }
 }
 
 .quality__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   line-height: 16px;
@@ -95,5 +95,13 @@
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.quality__title-link {
+  grid-column: 1/-1;
+
+  @media (min-width: 768px) {
+    grid-column: 1/2;
   }
 }

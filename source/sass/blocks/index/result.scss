@@ -1,14 +1,13 @@
 .result {
+  width: 100%;
   background-color: #eaeaea;
 
   @media (min-width: 768px) {
-    width: 768px;
     background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
   }
   // не пониаю почему на tablet версии жесткий градиент, а в десктопе с переходом
   @media (min-width: 1220px) {
-    width: 1440px;
-    background: linear-gradient(to bottom, #ffffff 10px, #eaeaea 462px);
+    background: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23% 77%);
   }
 }
 
@@ -62,7 +61,7 @@
 }
 
 .result__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 36px;
@@ -79,7 +78,7 @@
 }
 
 .result__total {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: italic;
   line-height: 20px;

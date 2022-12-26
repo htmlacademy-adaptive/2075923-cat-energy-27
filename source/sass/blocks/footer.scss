@@ -1,13 +1,6 @@
 .footer {
   background-color: #f2f2f2;
-
-  @media (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media (min-width: 1220px) {
-    width: 1440px;
-  }
+  width: 100%;
 }
 
 .footer__conteiner {
@@ -59,7 +52,7 @@
   padding-bottom: 22px;
 }
 
-.footer_logo-text {
+.footer__logo-text {
   margin: 0;
 
   @media (min-width: 768px) {
