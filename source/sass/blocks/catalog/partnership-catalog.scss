@@ -1,14 +1,17 @@
 .partnership-catalog {
+  margin: 0 auto;
   width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (min-width: 768px) {
-    width: 100%;
-    background-color: #f2f2f2;
+    width: 709px;
   }
 
   @media (min-width: 1220px) {
-    background-color: #ffffff;
+    position: relative;
+    top: 273px;
+    margin-top: -134px;
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

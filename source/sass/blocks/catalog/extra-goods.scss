@@ -1,3 +1,20 @@
+.extra-goods {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .extra-goods__aside-text {
   font-size: 16px;
   text-align: center;

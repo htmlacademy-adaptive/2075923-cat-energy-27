@@ -5,7 +5,7 @@
   @media (min-width: 768px) {
     background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
   }
-  // не пониаю почему на tablet версии жесткий градиент, а в десктопе с переходом
+
   @media (min-width: 1220px) {
     background: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23% 77%);
   }
@@ -13,6 +13,7 @@
 
 .result__conteiner {
   width: 280px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -27,6 +28,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
