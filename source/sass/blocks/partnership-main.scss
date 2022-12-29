@@ -1,15 +1,10 @@
-.partnership-form {
+.partnership-main {
   margin: 0 auto;
-  width: 280px;
-
-  @media (min-width: 768px) {
-    width: 709px;
-  }
 
   @media (min-width: 1220px) {
     position: relative;
     top: 273px;
-    margin-top: -134px;
+    margin-top: -273px;
     width: 1220px;
     padding-left: 110px;
     padding-right: 110px;

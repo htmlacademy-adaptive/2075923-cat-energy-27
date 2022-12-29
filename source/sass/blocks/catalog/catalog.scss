@@ -1,3 +1,19 @@
+.catalog {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1220px) {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .catalog__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -8,4 +24,11 @@
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 82px;
+    width: fit-content;
+  }
 }

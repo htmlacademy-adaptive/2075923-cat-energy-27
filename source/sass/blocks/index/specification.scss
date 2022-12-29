@@ -1,10 +1,15 @@
+.specification {
+  padding-bottom: 20px;
+}
+
 .specification__definition {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
+  margin: 0 auto;
 }
 
 .specification__item {

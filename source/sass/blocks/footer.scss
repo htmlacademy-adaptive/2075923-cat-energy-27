@@ -1,9 +1,66 @@
 .footer {
   background-color: #f2f2f2;
+  width: 100%;
 }
 
 .footer__conteiner {
+  margin: 0 auto;
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.footer__logo {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    margin: 0;
+  }
+}
+
+.footer__social {
+  width: 280px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    border-top: none;
+    border-bottom: none;
+  }
+}
+
+.footer__academy-logo-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.footer__logo-text {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    padding-right: 23px;
+  }
 }

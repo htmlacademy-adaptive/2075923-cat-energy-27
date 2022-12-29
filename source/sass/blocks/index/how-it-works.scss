@@ -1,12 +1,52 @@
-.how-it-works__conteiner {
+.how-it-works {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 49px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    padding-top: 25px;
+    width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 1220px) {
+    border-bottom: none;
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  &::after {
+    @media (min-width: 768px) {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      z-index: 2;
+      left: 0;
+    }
+
+    @media (min-width: 1220px) {
+      display: none;
+    }
+  }
 }
 
 .how-it-works__discription {
   line-height: 18px;
   color: #444444;
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .how-it-works__list {
@@ -15,13 +55,34 @@
   margin: 0;
   width: 180px;
   padding-left: 80px;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 280px 280px;
+    gap: 37px 157px;
+    padding: 0;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .how-it-works__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 32px;
+  }
 }

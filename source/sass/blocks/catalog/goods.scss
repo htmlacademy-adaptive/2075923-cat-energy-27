@@ -1,0 +1,12 @@
+.goods {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 709px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+  }
+}
