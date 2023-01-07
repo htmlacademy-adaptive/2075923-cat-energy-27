@@ -1,7 +1,12 @@
+.more-details {
+  margin-bottom: 32px;
+}
+
 .more-details__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
 
   @media (min-width: 768px) {
     display: grid;
@@ -14,4 +19,8 @@
     width: 1125px;
     justify-content: space-between;
   }
+}
+
+.more-details__item {
+  padding-bottom: 13px;
 }

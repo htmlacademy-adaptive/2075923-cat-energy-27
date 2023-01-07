@@ -1,8 +1,12 @@
 .map__view {
-  border: 0;
+  border: none;
   width: 100%;
 
   @media (min-width: 1220px) {
     height: 400px;
   }
+}
+
+.map img {
+  display: none;
 }

@@ -23,12 +23,20 @@
   }
 
   &--modification {
+    width: 280px;
+    margin: 0 auto;
+    background-color: transparent;
+
     @media (min-width: 768px) {
       background-color: transparent;
+      width: 709px;
+      margin: 0 auto;
     }
 
     @media (min-width: 1220px) {
       background-color: #ffffff;
+      width: 565px;
+      margin: 0;
     }
   }
 }

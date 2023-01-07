@@ -10,14 +10,19 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="navigation">
-      <a class="navigation__logo logo logo--shown" href="#">
-        <img src="img/logo-cat-mobile.png" width="33" height="37" alt="Логотип в виде кота.">
-        <img src="img/cat-energy-logo-tablet.png" width="51" height="49" alt="Логотип в виде кота.">
-        <img src="img/logo-catenergy-mobile.png" width="101" height="18" alt="Логотип Catenergy.">
-      </a>
-      <button class="navigation__toogle navigation__toogle--open" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
+    <nav class="navigation navigation--close navigation--nojs">
+      <div class="navigation__header-conteiner">
+        <a class="navigation__logo logo logo--shown" href="#">
+          <img src="img/logo-cat-mobile.png" width="33" height="37" alt="Логотип в виде кота.">
+          <img class="visually-hidden" src="img/cat-energy-logo-tablet.png" width="51" height="49"
+            alt="Логотип в виде кота.">
+        </a>
+        <a class="navigation__logo logo logo--shown" href="#">
+          <img src="img/logo-catenergy-mobile.png" width="101" height="18" alt="Логотип Catenergy.">
+        </a>
+        <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+      </div>
       <ul class="navigation__list menu">
         <li class="menu__item menu__item--current">
           <a href="index.html">Главная</a>
@@ -193,6 +198,7 @@
       </div>
     </footer>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>

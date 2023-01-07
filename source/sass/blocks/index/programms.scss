@@ -35,14 +35,73 @@
 }
 
 .programms__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 91px;
   margin: 0;
+
+  &--slim::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/cat_back_mobile.png");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 53px;
+    top: 21px;
+    left: 23px;
+
+    @media (min-width: 768px) {
+      background-image: url("../img/cat_back_tablet.png");
+      background-repeat: no-repeat;
+      width: 200px;
+      height: 211px;
+      top: 81px;
+      left: 445px;
+    }
+
+    @media (min-width: 1220px) {
+      background-image: url("../img/cat_back_desc.png");
+      background-repeat: no-repeat;
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+    }
+  }
+
+  &--gain::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/cat_walk_mobile.png");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 50px;
+    top: 21px;
+    left: 13px;
+
+    @media (min-width: 768px) {
+      background-image: url("../img/cat_walk_tablet.png");
+      background-repeat: no-repeat;
+      width: 268px;
+      height: 200px;
+      top: 81px;
+      left: 413px;
+    }
+
+    @media (min-width: 1220px) {
+      background-image: url("../img/cat_walk_desc.png");
+      background-repeat: no-repeat;
+      width: 134px;
+      height: 100px;
+      top: 47px;
+      left: 33px;
+    }
+  }
 
   @media (min-width: 768px) {
     padding-top: 77px;
@@ -56,6 +115,7 @@
   @media (min-width: 1220px) {
     text-align: center;
     padding-left: 0;
+    padding-bottom: 76px;
   }
 }
 
