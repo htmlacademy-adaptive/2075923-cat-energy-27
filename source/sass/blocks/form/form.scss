@@ -1,6 +1,6 @@
 .form {
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
@@ -19,6 +19,12 @@
 
 .form__button {
   width: 280px;
+  border: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: 1220px) {
+    width: 565px;
+  }
 }
 
 .form__legend {
@@ -27,6 +33,8 @@
   font-style: italic;
   font-size: 24px;
   line-height: 26px;
+  padding-top: 26px;
+  margin-bottom: 35px;
 
   @media (min-width: 768px) {
     font-size: 36px;
@@ -44,6 +52,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
 }
 
 .form__title {
@@ -86,7 +95,122 @@
 }
 
 .form__label {
+  margin-right: 12px;
+
   @media (min-width: 768px) {
     font-size: 20px;
   }
+}
+
+.form__item {
+  height: 45px;
+  margin-bottom: 14px;
+}
+
+.form__input {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 0;
+  border: 1px solid #e7e7e7;
+
+  &[id="inerview-name"] {
+    width: 204px;
+
+    @media (min-width: 768px) {
+      width: 545px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 481px;
+    }
+  }
+
+  &[id="inerview-weight"] {
+    width: 182px;
+
+    @media (min-width: 768px) {
+      width: 517px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 455px;
+    }
+  }
+
+  &[id="inerview-age"] {
+    width: 149px;
+
+    @media (min-width: 768px) {
+      width: 476px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 412px;
+    }
+  }
+
+  &[id="сontact-details-email"] {
+    width: 188px;
+
+    @media (min-width: 768px) {
+      width: 526px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 486px;
+    }
+  }
+
+  &[id="сontact-details-telephone"] {
+    width: 171px;
+
+    @media (min-width: 768px) {
+      width: 505px;
+    }
+
+    @media (min-width: 1220px) {
+      width: 467px;
+    }
+  }
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: 768px) {
+    width: 709px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__comments {
+  width: 280px;
+  min-height: 150px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+
+  @media (min-width: 768px) {
+    width: 630px;
+  }
+
+  @media (min-width: 1220px) {
+    width: 1220px;
+    height: 174px;
+  }
+}
+
+.form__note {
+  display: inline;
+  text-align: center;
 }
