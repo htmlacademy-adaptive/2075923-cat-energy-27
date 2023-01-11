@@ -82,7 +82,6 @@
     display: grid;
     grid-template-columns: 324px 324px;
     gap: 60px 60px;
-    align-items: baseline;
   }
 
   @media (min-width: 1220px) {
@@ -105,6 +104,11 @@
     width: 324px;
     height: 429px;
     border: 2px solid #d3d3d3;
+  }
+
+  @media (min-width: 1220px) {
+    width: 245px;
+    height: 431px;
   }
 
   &::before,
@@ -191,6 +195,10 @@
     height: 60px;
     left: 132px;
     padding-bottom: 49px;
+  }
+
+  @media (min-width: 1220px) {
+    left: 94px;
   }
 }
 

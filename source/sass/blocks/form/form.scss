@@ -105,6 +105,8 @@
 .form__item {
   height: 45px;
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .form__input {
@@ -113,66 +115,8 @@
   padding-left: 20px;
   padding-right: 0;
   border: 1px solid #e7e7e7;
-
-  &[id="inerview-name"] {
-    width: 204px;
-
-    @media (min-width: 768px) {
-      width: 545px;
-    }
-
-    @media (min-width: 1220px) {
-      width: 481px;
-    }
-  }
-
-  &[id="inerview-weight"] {
-    width: 182px;
-
-    @media (min-width: 768px) {
-      width: 517px;
-    }
-
-    @media (min-width: 1220px) {
-      width: 455px;
-    }
-  }
-
-  &[id="inerview-age"] {
-    width: 149px;
-
-    @media (min-width: 768px) {
-      width: 476px;
-    }
-
-    @media (min-width: 1220px) {
-      width: 412px;
-    }
-  }
-
-  &[id="сontact-details-email"] {
-    width: 188px;
-
-    @media (min-width: 768px) {
-      width: 526px;
-    }
-
-    @media (min-width: 1220px) {
-      width: 486px;
-    }
-  }
-
-  &[id="сontact-details-telephone"] {
-    width: 171px;
-
-    @media (min-width: 768px) {
-      width: 505px;
-    }
-
-    @media (min-width: 1220px) {
-      width: 467px;
-    }
-  }
+  min-width: 153px;
+  flex-grow: 1;
 }
 
 .form__wrapper {

@@ -7,7 +7,7 @@
   @media (min-width: 768px) {
     display: grid;
     grid-column: 1/-1;
-    width: 632px;
+    width: 100%;
   }
 
   @media (min-width: 1220px) {
@@ -61,7 +61,7 @@
   @media (min-width: 768px) {
     width: 709px;
     display: grid;
-    grid-template-columns: 400px 181px 43px;
+    grid-template-columns: 1fr 181px 43px;
     padding-top: 26px;
     padding-bottom: 28px;
     border-top: 1px solid #cdcdcd;
@@ -89,8 +89,6 @@
 
   @media (min-width: 768px) {
     width: 709px;
-    display: grid;
-    grid-template-columns: 632px;
   }
 
   @media (min-width: 1220px) {

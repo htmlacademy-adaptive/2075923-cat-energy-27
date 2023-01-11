@@ -10,7 +10,9 @@
   color: #444444;
 
   @media (min-width: 1220px) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
     width: 1220px;
     justify-content: space-between;
   }
@@ -18,4 +20,6 @@
 
 .сontact-details__item {
   margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 }
