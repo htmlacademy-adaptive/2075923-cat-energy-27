@@ -12,16 +12,6 @@
     top: 38px;
     z-index: -1;
   }
-
-  @media (min-width: 768px) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: 1220px) {
-    padding-left: 110px;
-    padding-right: 110px;
-  }
 }
 
 .extra-goods__aside-text {
@@ -49,8 +39,9 @@
   padding-right: 21px;
   position: relative;
   background-color: #ffffff;
+  width: fit-content;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
@@ -66,12 +57,16 @@
   padding-right: 20px;
   margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
     display: flex;
     flex-direction: column;
   }
@@ -91,13 +86,13 @@
     z-index: 2;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
   }
 }
 
 .extra-goods__card-aside-wrapper {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     display: flex;
   }

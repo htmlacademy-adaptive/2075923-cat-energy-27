@@ -10,7 +10,7 @@
     position: absolute;
     top: 337px;
 
-    @media (min-width: 709px) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -23,7 +23,7 @@
     position: absolute;
     top: 460px;
 
-    @media (min-width: 709px) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
@@ -40,7 +40,7 @@
   padding-bottom: 37px;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 54px;

@@ -1,5 +1,6 @@
 // Начните писать стили здесь
 @import "fonts.scss";
+@import "viewports.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/map";
 @import "./blocks/navigation.scss";
@@ -32,4 +33,3 @@
 @import "./blocks/catalog/product-features.scss";
 @import "./blocks/catalog/quality.scss";
 @import "./blocks/catalog/partnership-catalog.scss";
-@import "viewports.scss"

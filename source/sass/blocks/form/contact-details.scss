@@ -9,7 +9,7 @@
   line-height: 18px;
   color: #444444;
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;

@@ -4,13 +4,13 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     padding-left: 110px;
     padding-right: 110px;
@@ -22,7 +22,7 @@
   border: 0;
   margin-bottom: 21px;
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 565px;
   }
 }
@@ -36,7 +36,7 @@
   padding-top: 26px;
   margin-bottom: 35px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -64,7 +64,7 @@
   width: 226px;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 66px;
@@ -73,20 +73,20 @@
 }
 
 .form__fields {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 66px;
     width: 630px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
 
 .form__interview-conteiner {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 568px;
     column-gap: 80px;
@@ -97,7 +97,7 @@
 .form__label {
   margin-right: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
 }
@@ -124,11 +124,11 @@
   margin: 0 auto;
 
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
@@ -144,11 +144,11 @@
   border: 1px solid #e7e7e7;
   border-radius: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 630px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     height: 174px;
   }
