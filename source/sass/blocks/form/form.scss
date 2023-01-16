@@ -1,16 +1,16 @@
 .form {
-  margin: 0 auto;
   width: 280px;
+  margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     padding-left: 110px;
     padding-right: 110px;
@@ -19,6 +19,12 @@
 
 .form__button {
   width: 280px;
+  border: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
 }
 
 .form__legend {
@@ -27,8 +33,10 @@
   font-style: italic;
   font-size: 24px;
   line-height: 26px;
+  padding-top: 26px;
+  margin-bottom: 35px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
   }
@@ -44,6 +52,7 @@
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+  margin: 0;
 }
 
 .form__title {
@@ -55,7 +64,7 @@
   width: 226px;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 66px;
@@ -64,20 +73,20 @@
 }
 
 .form__fields {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 66px;
     width: 630px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
   }
 }
 
 .form__interview-conteiner {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 569px 568px;
     column-gap: 80px;
@@ -86,7 +95,66 @@
 }
 
 .form__label {
-  @media (min-width: 768px) {
+  margin-right: 12px;
+
+  @media (min-width: $tablet-width) {
     font-size: 20px;
   }
+}
+
+.form__item {
+  height: 45px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.form__input {
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 0;
+  border: 1px solid #e7e7e7;
+  min-width: 153px;
+  flex-grow: 1;
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__comments {
+  width: 280px;
+  min-height: 150px;
+  border: 1px solid #e7e7e7;
+  border-radius: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 174px;
+  }
+}
+
+.form__note {
+  display: inline;
+  text-align: center;
 }

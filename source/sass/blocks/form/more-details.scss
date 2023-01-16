@@ -1,17 +1,26 @@
+.more-details {
+  margin-bottom: 32px;
+}
+
 .more-details__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  padding-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 221px 221px;
     column-gap: 123px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 1125px;
     justify-content: space-between;
   }
+}
+
+.more-details__item {
+  padding-bottom: 13px;
 }

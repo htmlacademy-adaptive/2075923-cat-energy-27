@@ -1,19 +1,21 @@
 // Начните писать стили здесь
 @import "fonts.scss";
+@import "viewports.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/map";
 @import "./blocks/navigation.scss";
+@import "./blocks/menu.scss";
 @import "./blocks/social.scss";
 @import "./blocks/page.scss";
 @import "./blocks/partnership.scss";
 @import "./blocks/partnership-main.scss";
 @import "./blocks/visually-hidden.scss";
+@import "./blocks/logo.scss";
 @import "./blocks/index/academy-logo.scss";
 @import "./blocks/index/button.scss";
 @import "./blocks/index/how-it-works.scss";
 @import "./blocks/index/main-conteiner.scss";
 @import "./blocks/index/main-header.scss";
-@import "./blocks/index/menu.scss";
 @import "./blocks/index/programms.scss";
 @import "./blocks/index/promo.scss";
 @import "./blocks/index/result.scss";
@@ -31,4 +33,3 @@
 @import "./blocks/catalog/product-features.scss";
 @import "./blocks/catalog/quality.scss";
 @import "./blocks/catalog/partnership-catalog.scss";
-@import "viewports.scss"

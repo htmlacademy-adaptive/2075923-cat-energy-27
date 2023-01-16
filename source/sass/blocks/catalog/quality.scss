@@ -4,13 +4,13 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-column: 1/-1;
-    width: 632px;
+    width: 100%;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 244px;
     grid-column: -2/-1;
   }
@@ -21,7 +21,7 @@
   line-height: 14px;
   color: #444444;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
   }
@@ -31,53 +31,67 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+  text-align: end;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 40px;
   }
 }
 
 
 .quality__item {
   display: grid;
+  margin-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
   grid-template-columns: 140px 140px;
 
-  @media (min-width: 768px) {
+  span {
+    padding-bottom: 12px;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
     width: 709px;
     display: grid;
-    grid-template-columns: 400px 181px 43px;
+    grid-template-columns: 1fr 181px 43px;
     padding-top: 26px;
     padding-bottom: 28px;
     border-top: 1px solid #cdcdcd;
     align-items: center;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 895px;
     display: grid;
-    grid-template-columns: 324px 240px 80px 244px;
+    grid-template-columns: 324px 229px 85px 244px;
     align-content: flex-start;
   }
 }
 
 .quality__item:last-child {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     border-bottom: 1px solid #cdcdcd;
   }
 }
 
 .quality__list {
   list-style-type: none;
+  margin: 0;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
-    display: grid;
-    grid-template-columns: 632px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: block;
     width: 894px;
     padding-right: 80px;
@@ -92,7 +106,7 @@
   text-transform: uppercase;
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
   }
@@ -100,8 +114,10 @@
 
 .quality__title-link {
   grid-column: 1/-1;
+  padding-top: 13px;
+  padding-bottom: 13px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     grid-column: 1/2;
   }
 }

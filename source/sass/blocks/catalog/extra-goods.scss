@@ -1,24 +1,28 @@
 .extra-goods {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
+  position: relative;
 
-  @media (min-width: 768px) {
-    width: 709px;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @media (min-width: 1220px) {
-    width: 1220px;
-    padding-left: 110px;
-    padding-right: 110px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #68b738;
+    top: 38px;
+    z-index: -1;
   }
 }
 
 .extra-goods__aside-text {
   font-size: 16px;
   text-align: center;
+  color: #ffffff;
   width: 161px;
+  position: absolute;
+  z-index: 3;
+  top: 187px;
+  left: 58px;
 }
 
 .extra-goods__title {
@@ -27,12 +31,23 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  margin: 0;
+  padding-top: 25px;
+  padding-bottom: 36px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 21px;
+  position: relative;
+  background-color: #ffffff;
+  width: fit-content;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     margin: 0;
     padding-bottom: 80px;
+    padding-left: 37px;
+    padding-right: 36px;
   }
 }
 
@@ -40,26 +55,44 @@
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
     display: flex;
     flex-direction: column;
   }
 }
 
 .extra-goods__aside-wrapper {
-  @media (min-width: 768px) {
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 279px;
+    height: 289px;
+    background-color: #68b738;
+    opacity: 85%;
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
     width: 709px;
   }
 }
 
 .extra-goods__card-aside-wrapper {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
     display: flex;
   }

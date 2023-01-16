@@ -1,12 +1,19 @@
 .goods {
   width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
+  position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

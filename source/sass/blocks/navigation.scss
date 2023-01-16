@@ -8,8 +8,13 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+  width: 280px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  @media (min-width: 768px) {
+
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,7 +25,7 @@
     margin: 0;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     padding-top: 69px;
     width: 1220px;
@@ -29,7 +34,7 @@
   }
 
   &--catalog {
-    @media (min-width: 1220px) {
+    @media (min-width: $desktop-width) {
       position: relative;
       top: 0;
       width: 1220px;
@@ -43,7 +48,12 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (max-width: 320px) {
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     width: 440px;
@@ -52,12 +62,77 @@
 }
 
 .navigation__toogle {
-  @media (min-width: 768px) {
+  display: block;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.navigation--close .navigation__toogle::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 13px;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  cursor: pointer;
+}
+
+.navigation--open .navigation__toogle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 13px;
+    width: 24px;
+    height: 1.5px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 
 .navigation__logo {
   display: flex;
   align-items: center;
+}
+
+.navigation__header-conteiner {
+  display: flex;
+  width: 280px;
+  min-height: 66px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+  }
+}
+
+@media (min-width: 280px) and(max-width: 767px) {
+  .navigation--close .navigation__list {
+    display: none;
+  }
+}
+
+.navigation--nojs .navigation {
+  display: block;
+  position: static;
+  min-height: 0;
 }

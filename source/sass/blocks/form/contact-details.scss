@@ -9,9 +9,17 @@
   line-height: 18px;
   color: #444444;
 
-  @media (min-width: 1220px) {
-    display: flex;
-    width: 1125px;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+    width: 1220px;
     justify-content: space-between;
   }
+}
+
+.сontact-details__item {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
 }

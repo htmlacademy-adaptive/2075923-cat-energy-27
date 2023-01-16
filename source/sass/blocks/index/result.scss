@@ -2,11 +2,11 @@
   width: 100%;
   background-color: #eaeaea;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background: linear-gradient(to bottom, #ffffff 619px, #eaeaea 462px);
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     background: linear-gradient(to bottom, #ffffff 23%, #eaeaea 23% 77%);
   }
 }
@@ -17,13 +17,13 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 709px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -34,7 +34,7 @@
 }
 
 .result__text-container {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 50%;
   }
 }
@@ -45,13 +45,13 @@
   margin: 0;
   padding-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     padding-bottom: 58px;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     max-width: 436px;
   }
 }
@@ -73,7 +73,7 @@
   padding-top: 25px;
   padding-bottom: 40px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     padding-bottom: 63px;
@@ -90,7 +90,7 @@
   justify-content: center;
   padding-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
   }
 }
@@ -102,13 +102,13 @@
 .result__total-price {
   margin: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     text-align: right;
   }
 }
 
 .result__specification-total-conteiner {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     padding-bottom: 99px;
@@ -116,7 +116,7 @@
 }
 
 .result__slider-conteiner {
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     width: 50%;
   }
 }

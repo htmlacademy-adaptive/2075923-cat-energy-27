@@ -13,5 +13,9 @@
   &--accent {
     background-color: #f2f2f2;
     color: #444444;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+    }
   }
 }
