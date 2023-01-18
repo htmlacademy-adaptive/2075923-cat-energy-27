@@ -2,7 +2,7 @@
   border: none;
   width: 100%;
 
-  @media (min-width: 1220px) {
+  @media (min-width: $desktop-width) {
     height: 400px;
   }
 }

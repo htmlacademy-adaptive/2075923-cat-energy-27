@@ -37,6 +37,12 @@
   margin: 0;
   text-align: center;
   padding-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    width: 165px;
+    padding-bottom: 59px;
+  }
 }
 
 .card__item {
@@ -61,6 +67,7 @@
       content: "";
       position: absolute;
       z-index: -1;
+      top: 90px;
       width: 324px;
       height: 430px;
       background-color: #f2f2f2;
@@ -81,7 +88,7 @@
     width: 709px;
     display: grid;
     grid-template-columns: 324px 324px;
-    gap: 60px 60px;
+    column-gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -104,6 +111,8 @@
     width: 324px;
     height: 429px;
     border: 2px solid #d3d3d3;
+    box-sizing: border-box;
+    margin-top: 90px;
   }
 
   @media (min-width: $desktop-width) {

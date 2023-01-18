@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,10 +16,12 @@
     <nav class="navigation navigation--close navigation--nojs navigation--catalog">
       <div class="navigation__header-conteiner">
         <a class="navigation__logo logo" href="#">
-          <img class="logo__cat" src="img/logo-cat-mobile.png" width="33" height="37" alt="Логотип в виде кота.">
-          <img class="visually-hidden" src="img/cat-energy-logo-tablet.png" width="51" height="49"
-            alt="Логотип в виде кота.">
-          <img src="img/logo-catenergy-mobile.png" width="101" height="18" alt="Логотип Catenergy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-cat-desc.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="51" height="49">
+            <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="37" alt="Логотип в виде кота.">
+          </picture>
+          <img src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
         </a>
         <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
@@ -41,8 +46,14 @@
         <ul class="card__list">
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/chiken-mini.png" width="140" height="112"
-                alt="Корм 500г со вкусом курицы.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/chiken-mini-desktop.png 1x,img/catalog/chiken-mini-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/chiken-mini-tablet.png 1x,img/catalog/chiken-mini-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/chiken-mini.png" width="140" height="112"
+                  alt="Корм 500г со вкусом курицы." srcset="img/catalog/chiken-mini@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -67,8 +78,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/chiken-big.png" width="140" height="112"
-                alt="Корм 1000г со вкусом курицы.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/chiken-big-desktop.png 1x,img/catalog/chiken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/chiken-big-tablet.png 1x,img/catalog/chiken-big-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/chiken-big.png" width="140" height="112"
+                  alt="Корм 1000г со вкусом курицы." srcset="img/catalog/chiken-big@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -93,7 +110,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/fish-mini.png" width="140" height="112" alt="Корм 500г со вкусом рыбы.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/fish-mini-desktop.png 1x,img/catalog/fish-mini-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/fish-mini-tablet.png 1x,img/catalog/fish-mini-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/fish-mini.png" width="140" height="112"
+                  alt="Корм 500г со вкусом рыбы." srcset="img/catalog/fish-mini@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -118,7 +142,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/fish-big.png" width="140" height="112" alt="Корм 1000г со вкусом рыбы.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/fish-big-desktop.png 1x,img/catalog/fish-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/fish-big-tablet.png 1x,img/catalog/fish-big-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/fish-big.png" width="140" height="112"
+                  alt="Корм 1000г со вкусом рыбы." srcset="img/catalog/fish-big@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -143,8 +174,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/buckwheat-mini.png" width="140" height="112"
-                alt="Корм 500г со вкусом гречки.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/buckwheat-mini-desktop.png 1x,img/catalog/buckwheat-mini-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/buckwheat-mini-tablet.png 1x,img/catalog/buckwheat-mini-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/buckwheat-mini.png" width="140" height="112"
+                  alt="Корм 500г со вкусом гречки." srcset="img/catalog/buckwheat-mini@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -169,8 +206,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/buckwheat-big.png" width="140" height="112"
-                alt="Корм 1000г со вкусом гречки.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/buckwheat-big-desktop.png 1x,img/catalog/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/buckwheat-big-tablet.png 1x,img/catalog/buckwheat-big-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/buckwheat-big.png" width="140" height="112"
+                  alt="Корм 1000г со вкусом гречки." srcset="img/catalog/buckwheat-big@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -195,7 +238,14 @@
           </li>
           <li class="card__item">
             <a class="card__pic-link">
-              <img class="card__pic" src="img/rice-mini.png" width="140" height="112" alt="Корм 500г со вкусом риса.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196"
+                  srcset="img/catalog/rice-mini-desktop.png 1x,img/catalog/rice-mini-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" width="168" height="200"
+                  srcset="img/catalog/rice-mini-tablet.png 1x,img/catalog/rice-mini-tablet@2x.png 2x">
+                <img class="card__pic" src="img/catalog/rice-mini.png" width="140" height="112"
+                  alt="Корм 500г со вкусом риса." srcset="img/catalog/rice-mini@2x.png 2x">
+              </picture>
             </a>
             <a class="card__title-link">
               <h3 class="card__title">Cat Energy<br>
@@ -277,8 +327,14 @@
             </ul>
           </div>
           <div class="extra-goods__aside-wrapper">
-            <img class="extra-goods__aside-pic extra-goods__aside-pic-decoration" src="img/cat-in-bag.jpeg" width="279"
-              height="289" alt="Кот в рюкзаке.">
+            <picture>
+              <source media="(min-width: 1440px)" width="245" height="288"
+              srcset="img/catalog/cat-in-bag-desc.jpg 1x,img/catalog/cat-in-bag-desc@2x.jpg 2x">
+              <source media="(min-width: 768px)" width="707" height="200"
+                srcset="img/catalog/cat-in-bag-tablet.jpg 1x,img/catalog/cat-in-bag-tablet@2x.jpg 2x">
+              <img class="extra-goods__aside-pic extra-goods__aside-pic-decoration" src="img/catalog/cat-in-bag.jpeg"
+                width="279" height="289" alt="Кот в рюкзаке." srcset="img/catalog/cat-in-bag@2x.jpg 2x">
+            </picture>
             <p class="extra-goods__aside-text">Закажите все
               и получите чехол для
               кота в подарок!</p>

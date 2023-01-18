@@ -16,6 +16,7 @@
 
 .extra-goods__aside-text {
   font-size: 16px;
+  margin: 0;
   text-align: center;
   color: #ffffff;
   width: 161px;
@@ -23,6 +24,16 @@
   z-index: 3;
   top: 187px;
   left: 58px;
+
+  @media (min-width: $tablet-width) {
+    top: 78px;
+    left: 422px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 185px;
+    left: 40px;
+  }
 }
 
 .extra-goods__title {
@@ -75,6 +86,12 @@
 .extra-goods__aside-wrapper {
   display: block;
   position: relative;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    margin-bottom: 76px;
+  }
 
   &::before {
     content: "";
@@ -84,10 +101,42 @@
     background-color: #68b738;
     opacity: 85%;
     z-index: 2;
+
+    @media (min-width: $tablet-width) {
+      width: 707px;
+      height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 245px;
+      height: 288px;
+    }
   }
 
-  @media (min-width: $tablet-width) {
-    width: 709px;
+  &::after {
+    content: "";
+    background-image: url("../img/catalog/icon-gift.png");
+    position: absolute;
+    left: 101px;
+    top: 58px;
+    width: 78px;
+    height: 80px;
+    z-index: 3;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/icon-gift@2x.png");
+      background-size: 78px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 77px;
+      top: 56px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 84px;
+      top: 55px;
+    }
   }
 }
 

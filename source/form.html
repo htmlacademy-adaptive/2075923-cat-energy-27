@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -13,10 +16,12 @@
     <nav class="navigation navigation--close navigation--nojs navigation--catalog">
       <div class="navigation__header-conteiner">
         <a class="navigation__logo logo" href="#">
-          <img class="logo__cat" src="img/logo-cat-mobile.png" width="33" height="37" alt="Логотип в виде кота.">
-          <img class="visually-hidden" src="img/cat-energy-logo-tablet.png" width="51" height="49"
-            alt="Логотип в виде кота.">
-          <img src="img/logo-catenergy-mobile.png" width="101" height="18" alt="Логотип Catenergy.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-cat-desc.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="51" height="49">
+            <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="37" alt="Логотип в виде кота.">
+          </picture>
+          <img src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
         </a>
         <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>

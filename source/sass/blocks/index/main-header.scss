@@ -14,12 +14,12 @@
     bottom: 0;
     background-color: #d9d9d9;
 
-    @media (min-width: 768px) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
     padding-left: 30px;
