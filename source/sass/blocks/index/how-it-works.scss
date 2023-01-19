@@ -44,6 +44,7 @@
   padding-bottom: 20px;
   padding-left: 81px;
 
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
@@ -52,83 +53,54 @@
   }
 
   &--benefit {
-    background-image: url("../img/benefit-icon.png");
+    background-image: url("../img/benefit-icon.svg");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/benefit-icon@2x.png");
-      background-size: 60px auto;
-    }
-
     @media (min-width: $tablet-width) {
-      background-image: url("../img/benefit-icon-big.png");
-      background-repeat: no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/benefit-icon-big@2x.png");
-        background-size: 80px auto;
-      }
+      background-size: 80px auto;
+      width: 80px;
+      height: 80px;
     }
   }
 
   &--usage {
-    background-image: url("../img/usage-icon.png");
+    background-image: url("../img/usage-icon.svg");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/usage-icon@2x.png");
-      background-size: 60px auto;
-    }
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/usage-icon-big.png");
-      background-repeat: no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/usage-icon-big@2x.png");
-        background-size: 80px auto;
-      }
+      background-size: 80px auto;
+      width: 80px;
+      height: 80px;
     }
   }
 
   &--method {
-    background-image: url("../img/method-icon.png");
+    background-image: url("../img/method-icon.svg");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/method-icon@2x.png");
-      background-size: 60px auto;
-    }
-
     @media (min-width: $tablet-width) {
-      background-image: url("../img/method-icon-big.png");
-      background-repeat: no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/method-icon-big@2x.png");
-        background-size: 80px auto;
-      }
+      background-size: 80px auto;
+      width: 80px;
+      height: 80px;
     }
   }
 
   &--time {
-    background-image: url("../img/time-icon.png");
+    background-image: url("../img/time-icon.svg");
     background-repeat: no-repeat;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/time-icon@2x.png");
-      background-size: 60px auto;
-    }
-
     @media (min-width: $tablet-width) {
-      background-image: url("../img/time-icon-big.png");
-      background-repeat: no-repeat;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/time-icon-big@2x.png");
-        background-size: 80px auto;
-      }
+      background-size: 80px auto;
+      width: 80px;
+      height: 80px;
     }
+  }
+}
+
+.how-it-works__item {
+  p {
+    width: 204px;
   }
 }
 
@@ -136,8 +108,6 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
-  // width: 180px;
-  // padding-left: 80px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -153,21 +123,6 @@
     justify-content: space-between;
   }
 }
-
-
-// .how-it-works__item {
-//   padding-left: 81px;
-//   position: relative;
-
-//   &--benefit {
-//     position: absolute;
-//     left: 0;
-//     background-image: url("../img/benefit-icon.png");
-//     background-repeat: no-repeat;
-//     width: 60px;
-//     height: 60px;
-//   }
-// }
 
 .how-it-works__title {
   font-family: "Oswald", "Arial", sans-serif;

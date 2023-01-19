@@ -115,18 +115,13 @@
 
   &::after {
     content: "";
-    background-image: url("../img/catalog/icon-gift.png");
+    background-image: url("../img/catalog/icon-gift.svg");
     position: absolute;
     left: 101px;
     top: 58px;
     width: 78px;
     height: 80px;
     z-index: 3;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/catalog/icon-gift@2x.png");
-      background-size: 78px auto;
-    }
 
     @media (min-width: $tablet-width) {
       left: 77px;
