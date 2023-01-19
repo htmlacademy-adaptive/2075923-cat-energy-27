@@ -48,7 +48,7 @@
   &--slim::before {
     content: "";
     position: absolute;
-    background-image: url("../img/cat_back_mobile.png");
+    background-image: url("../img/cat-back.svg");
     background-repeat: no-repeat;
     width: 50px;
     height: 53px;
@@ -56,8 +56,7 @@
     left: 23px;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../img/cat_back_tablet.png");
-      background-repeat: no-repeat;
+      background-size: 200px auto;
       width: 200px;
       height: 211px;
       top: 81px;
@@ -65,8 +64,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/cat_back_desc.png");
-      background-repeat: no-repeat;
+      background-size: 100px auto;
       width: 100px;
       height: 100px;
       top: 47px;
@@ -77,16 +75,16 @@
   &--gain::before {
     content: "";
     position: absolute;
-    background-image: url("../img/cat_walk_mobile.png");
+    background-image: url("../img/cat-walk.svg");
     background-repeat: no-repeat;
     width: 67px;
     height: 50px;
     top: 21px;
     left: 13px;
 
+
     @media (min-width: $tablet-width) {
-      background-image: url("../img/cat_walk_tablet.png");
-      background-repeat: no-repeat;
+      background-size: 268px auto;
       width: 268px;
       height: 200px;
       top: 81px;
@@ -94,8 +92,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../img/cat_walk_desc.png");
-      background-repeat: no-repeat;
+      background-size: 134px auto;
       width: 134px;
       height: 100px;
       top: 47px;

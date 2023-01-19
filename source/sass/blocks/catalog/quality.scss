@@ -73,6 +73,9 @@
     display: grid;
     grid-template-columns: 324px 229px 85px 244px;
     align-content: flex-start;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }
 
@@ -119,5 +122,9 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
