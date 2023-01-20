@@ -22,4 +22,25 @@
   margin-bottom: 14px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.сontact-details__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

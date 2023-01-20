@@ -10,7 +10,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 221px 221px;
+    grid-template-columns: 250px 221px;
     column-gap: 123px;
   }
 
@@ -23,4 +23,32 @@
 
 .more-details__item {
   padding-bottom: 13px;
+  position: relative;
+}
+
+.more-details__input[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  --webkit-appearance: none;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #cdcdcd;
+}
+
+.more-details__input[type="checkbox"]:checked::before {
+  content: url("../img/tick.svg");
+  position: absolute;
+  width: 24px;
+  height: 18px;
+  left: 6px;
+  top: 5px;
+}
+
+.more-details__description {
+  padding-left: 20px;
+}
+
+.more-details__label {
+  display: flex;
+  align-items: center;
 }
