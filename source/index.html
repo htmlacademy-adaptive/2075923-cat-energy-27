@@ -7,11 +7,12 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <nav class="navigation navigation--close navigation--nojs">
       <div class="navigation__header-conteiner">
@@ -70,8 +71,7 @@
               Каталог Slim
               <svg class="catalog-button__icon catalog-button__icon--condition" width="32" height="12"
                 viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+                <use href="img/sprite.svg#arrow" />
               </svg>
             </a>
           </li>
@@ -84,8 +84,7 @@
               Каталог Pro
               <svg class="catalog-button__icon catalog-button__icon--condition" width="32" height="12"
                 viewbox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                <path d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z" fill="black" />
+                <use href="img/sprite.svg#arrow" />
               </svg>
             </a>
           </li>
@@ -128,11 +127,11 @@
             <dl class="result__list specification">
               <div class="specification__item">
                 <dd class="specification__definition">5 кг</dd>
-                <dt class="specification__term">Cнижение веса</dt>
+                <dt class="specification__term specification__term--lose">снижение <br> веса</dt>
               </div>
               <div class="specification__item">
                 <dd class="specification__definition">60 дней</dd>
-                <dt class="specification__term">Затрачено времени</dt>
+                <dt class="specification__term specification__term--time">затрачено <br>времени</dt>
               </div>
             </dl>
             <div class="result__total">
@@ -150,7 +149,7 @@
           </picture>
           <picture>
             <source media="(min-width: 768px)" width="560" height="512"
-            srcset="img/slim-cat-tablet.png 1x, img/slim-cat-tablet@2x.png 2x">
+              srcset="img/slim-cat-tablet.png 1x, img/slim-cat-tablet@2x.png 2x">
             <img class="result__pic" src="img/slim-cat-mobile.png" width="280" height="256" alt="Кот после."
               srcset="img/slim-cat-mobile@2x.png 2x">
           </picture>
@@ -158,11 +157,7 @@
           <div class="result__switch-conteiner">
             <svg class="result__pic-switch-button result__pic-switch-button--condition" width="40" height="258"
               viewbox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="18" width="4" height="257.02" rx="2" fill="#666666" />
-              <rect x="1" y="110" width="38" height="38" rx="19" fill="white" />
-              <path d="M16 120L8 129L16 138V120Z" fill="#666666" />
-              <path d="M32 129L24 120V138L32 129Z" fill="#666666" />
-              <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2" />
+              <use href="img/sprite.svg#switcher"/>
             </svg>
           </div>
         </div>
@@ -189,31 +184,42 @@
     </section>
     <footer class="footer">
       <div class="footer__conteiner">
-        <img class="footer__logo footer__logo--condition" src="img/footer-logo.svg" alt="Логотип Cat Energy">
+        <img class="footer__logo footer__logo--condition" width="" height="" src="img/footer-logo.svg" alt="Логотип Cat Energy">
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
-                  class="visually-hidden">Вконтакте.</span></a>
+                  class="visually-hidden">Вконтакте.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#vkontakte" />
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-                  class="visually-hidden">Ютуб.</span></a>
+                  class="visually-hidden">Ютуб.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#youtube" />
+                </svg>
+              </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span
-                  class="visually-hidden">Телеграм.</span></a>
+                  class="visually-hidden">Телеграм.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite.svg#telegram" />
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="footer__academy-logo-conteiner">
+        <a class="footer__academy-logo-link" href="#">
           <p class="footer__logo-text">HTML Academy</p>
-          <svg class="footer__logo-pic footer__logo-pic--condition" xmlns="http://www.w3.org/2000/svg" width="27"
-            height="34" viewbox="0 0 60 60">
-            <path fill="#666666"
-              d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
+          <svg width="27" height="35" viewbox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#logo-academy"/>
           </svg>
-        </div>
+
+        </a>
       </div>
     </footer>
   </main>

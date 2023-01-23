@@ -3,6 +3,17 @@
   width: 100%;
 }
 
+.footer__academy-logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  cursor: pointer;
+}
+
 .footer__conteiner {
   margin: 0 auto;
   width: 280px;
@@ -32,6 +43,20 @@
   padding-top: 40px;
   padding-bottom: 32px;
   margin: 0 auto;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: #3e3e3e;
+    }
+  }
+
+  &:active {
+    path {
+      fill: #6b6b6b;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -49,13 +74,13 @@
   }
 }
 
-.footer__academy-logo-conteiner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
+// .footer__academy-logo-conteiner {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   padding-top: 22px;
+//   padding-bottom: 22px;
+// }
 
 .footer__logo-text {
   margin: 0;

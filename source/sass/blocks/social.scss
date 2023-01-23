@@ -15,15 +15,17 @@
   width: 28px;
   height: 22px;
 
-  &--vkontakte {
-    background-image: url("../img/vkontakte.svg");
+  &:hover,
+  &:focus {
+    path {
+      fill: #5eaa2f;
+    }
   }
 
-  &--youtube {
-    background-image: url("../img/youtube.svg");
-  }
-
-  &--telegram {
-    background-image: url("../img/telegram.svg");
+  &:active {
+    path {
+      fill: #5eaa2f;
+      opacity: 0.3;
+    }
   }
 }
