@@ -1451,37 +1451,25 @@
   width: 100%;
 }
 
-.form__fields {
+.form__interview-conteiner {
   width: 280px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
-  .form__fields {
-    width: 630px;
-    font-size: 20px;
-    line-height: 30px;
-    padding-bottom: 66px;
-  }
-}
-@media (min-width: 1440px) {
-  .form__fields {
-    width: 1220px;
-    padding-right: 110px;
-    padding-left: 110px;
-  }
-}
-
-@media (min-width: 768px) {
   .form__interview-conteiner {
     width: 630px;
+    padding-right: 30px;
+    padding-left: 30px;
     margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
   .form__interview-conteiner {
     width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
     display: grid;
     grid-template-columns: 569px 568px;
     column-gap: 80px;
@@ -1544,26 +1532,9 @@
   border: none;
   padding: 0;
   position: relative;
+  margin: 0;
 }
-.form__fieldset--contact-details::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #68b738;
-  top: 40px;
-  z-index: -1;
-}
-.form__fieldset--comments::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #68b738;
-  top: 40px;
-  z-index: -1;
-}
-.form__fieldset--more-details::before {
+.form__fieldset--contact-details::before, .form__fieldset--comments::before, .form__fieldset--more-details::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -1751,7 +1722,6 @@
   position: relative;
   -webkit-appearance: none;
           appearance: none;
-  --webkit-appearance: none;
   width: 40px;
   height: 40px;
   border: 1px solid #cdcdcd;
@@ -1782,7 +1752,7 @@
 }
 @media (min-width: 1440px) {
   .card {
-    width: 1440px;
+    width: 1220px;
   }
 }
 
