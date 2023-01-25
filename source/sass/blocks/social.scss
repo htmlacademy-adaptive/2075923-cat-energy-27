@@ -7,6 +7,11 @@
   width: 132px;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 17px;
+    margin-left: 87px;
+  }
 }
 
 .social__link {
@@ -14,6 +19,7 @@
   background-repeat: no-repeat;
   width: 28px;
   height: 22px;
+  fill: #666666;
 
   &:hover,
   &:focus {

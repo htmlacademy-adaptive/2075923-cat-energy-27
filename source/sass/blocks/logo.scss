@@ -1,7 +1,21 @@
 .logo__cat {
   margin-right: 56px;
+  margin-left: 2px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 19px;
+    margin-right: 11px;
+  }
+}
+
+.logo__energy {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 21px;
+    width: 117px;
+    margin-bottom: 3px;
   }
 }

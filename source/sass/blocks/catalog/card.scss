@@ -9,6 +9,8 @@
 }
 
 .card__button {
+  font-size: 16px;
+  line-height: 20px;
   grid-column: 1/-1;
   text-decoration: none;
   text-align: center;
@@ -17,12 +19,11 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin-top: 33px;
-    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
     width: 170px;
+    margin-bottom: 39px;
   }
 }
 
@@ -38,17 +39,25 @@
   text-align: center;
   padding-bottom: 21px;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 165px;
+    margin: 0 auto;
+    padding-bottom: 88px;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     width: 165px;
-    padding-bottom: 59px;
+    padding-bottom: 86px;
   }
 }
 
 .card__item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 33px;
+  margin-bottom: 37px;
 
   &:last-child {
     margin-bottom: 25px;
@@ -58,7 +67,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 102px;
     position: relative;
   }
 
@@ -67,7 +76,7 @@
       content: "";
       position: absolute;
       z-index: -1;
-      top: 90px;
+      top: 76px;
       width: 324px;
       height: 430px;
       background-color: #f2f2f2;
@@ -76,6 +85,7 @@
     @media (min-width: $desktop-width) {
       width: 245px;
       height: 431px;
+      top: 85px;
     }
   }
 }
@@ -89,6 +99,7 @@
     display: grid;
     grid-template-columns: 324px 324px;
     column-gap: 60px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +108,7 @@
     grid-template-rows: repeat(2, 511px);
     gap: 63px 80px;
     align-content: center;
+    margin-bottom: 78px;
   }
 }
 
@@ -112,12 +124,13 @@
     height: 429px;
     border: 2px solid #d3d3d3;
     box-sizing: border-box;
-    margin-top: 90px;
+    margin-top: 77px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 431px;
+    margin-top: 85px;
   }
 
   &::before,
@@ -153,13 +166,14 @@
 .card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   color: #222222;
   text-transform: uppercase;
   text-decoration: none;
   margin: 0;
+  padding-top: 7px;
 
   br {
     @media (min-width: $tablet-width) {
@@ -178,40 +192,64 @@
     line-height: 24px;
     max-width: 134px;
     padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 21px;
+    padding-right: 18px;
+    padding-bottom: 11px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 21px;
+    padding-bottom: 15px;
+    padding-left: 27px;
   }
 }
 
 .card__pic-link {
   display: grid;
   grid-row: 1/3;
+  position: relative;
+  top: 6px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 34px;
+    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 43px;
   }
 }
 
 .card__icon {
   position: relative;
   left: 125px;
-  padding-bottom: 23px;
+  padding-bottom: 8px;
+  top: -4px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 52px;
+    margin-top: 40px;
     width: 60px;
     height: 60px;
     left: 132px;
-    padding-bottom: 49px;
+    padding-bottom: 32px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 94px;
+    left: 91px;
+    margin-top: 37px;
+    padding-bottom: 36px;
   }
 }
 
 .card__show-more-wrapper .card__title {
   text-align: center;
   padding-bottom: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 25px;
+    padding-left: 18px;
+  }
 }

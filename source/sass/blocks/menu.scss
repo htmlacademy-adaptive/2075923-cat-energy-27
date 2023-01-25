@@ -8,6 +8,14 @@
   padding-bottom: 24px;
   position: relative;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: 320px) and(max-width: 767px) {
     &::before {
       content: "";
@@ -36,11 +44,19 @@
     &--current {
       border-bottom: 2px solid #68b738;
     }
+
+    &--current-other {
+      border-bottom: 2px solid #68b738;
+    }
   }
 
   @media (min-width: $desktop-width) {
     &--current {
       border-bottom-color: #ffffff;
+    }
+
+    &--current-other {
+      border-bottom: 2px solid #68b738;
     }
   }
 }

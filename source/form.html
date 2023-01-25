@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -18,10 +18,10 @@
         <a class="navigation__logo logo" href="#">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-cat-desc.svg" width="70" height="59">
-            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="51" height="49">
+            <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
             <img class="logo__cat" src="img/logo-cat-mobile.svg" width="33" height="37" alt="Логотип в виде кота.">
           </picture>
-          <img src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
+          <img class="logo__energy" src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
         </a>
         <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
@@ -33,7 +33,7 @@
         <li class="menu__item menu__item--color">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="menu__item menu__item--color  menu__item--current">
+        <li class="menu__item menu__item--color menu__item--current-other">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
@@ -51,15 +51,15 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="inerview-name">ИМЯ:*</label>
-              <input class="form__input" type="text" id="inerview-name" name="inerview-name" placeholder="Барсик">
+              <input class="form__input" type="text" id="inerview-name" name="inerview-name" placeholder="Барсик" required>
             </li>
             <li class="form__item">
               <label class="form__label" for="inerview-weight">Вес (кг):*</label>
-              <input class="form__input" type="text" id="inerview-weight" name="inerview-weight" placeholder="7 кг">
+              <input class="form__input" type="number" id="inerview-weight" name="inerview-weight" placeholder="7" required>
             </li>
             <li class="form__item">
               <label class="form__label" for="inerview-age">Возраст (лет):</label>
-              <input class="form__input" type="text" id="inerview-age" name="inerview-age" placeholder="7">
+              <input class="form__input" type="number" id="inerview-age" name="inerview-age" placeholder="7" required>
             </li>
           </ul>
           <div class="form__purpuse purpuse">
@@ -75,7 +75,7 @@
                 <label class="purpuse__control">
                   <input class="purpuse__input" type="radio" value="gain" name="purpuse-group">
                   <span class="purpuse__mark"></span>
-                  <span class="purpuse__description">Набор веса</span>
+                  <span class="purpuse__description">Набор массы</span>
                 </label>
               </li>
               <li class="purpuse__item">
@@ -90,22 +90,22 @@
         </div>
         <fieldset class="form__fieldset form__fieldset--contact-details">
           <div class="сontact-details__wrapper">
-            <legend class="form__legend">Контактные данные<br>
+            <legend class="form__legend form__legend--сontact-details">Контактные данные<br>
               (владельца кота)</legend>
             <ul class="сontact-details__list">
               <li class="сontact-details__item">
-                <label class="form__label" for="сontact-details-email">E-mail:*</label>
+                <label class="form__label form__label--email" for="сontact-details-email" >E-mail:*</label>
                 <input class="form__input form__input--email" type="email" id="сontact-details-email"
-                  name="сontact-details-email" placeholder="kuklachev@gmail.com">
+                  name="сontact-details-email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__input-iconemeil" width="20" height="20" viewbox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#email" />
                 </svg>
               </li>
               <li class="сontact-details__item">
-                <label class="form__label" for="сontact-details-telephone">Телефон:*</label>
+                <label class="form__label form__label--tel" for="сontact-details-telephone">Телефон:*</label>
                 <input class="form__input form__input--tel" type="tel" id="сontact-details-telephone"
-                  name="сontact-details-telephone" placeholder="8 (960) 900-60-90">
+                  name="сontact-details-telephone" placeholder="8 (960) 900-60-90" required>
                 <svg class="form__input-icontel" width="20" height="20" viebox="0 0 20 20" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#tel" />
@@ -116,7 +116,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comments">
           <div class="сontact-details__wrapper">
-            <legend class="form__legend">
+            <legend class="form__legend form__legend--comments">
               Комментарий</legend>
             <textarea class="form__comments" name="comment" required
               placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -124,7 +124,7 @@
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--more-details">
           <div class="сontact-details__wrapper">
-            <legend class="form__legend">Дополнительно</legend>
+            <legend class="form__legend form__legend--more-details">Дополнительно</legend>
             <ul class="more-details__list">
               <li class="more-details__item">
                 <label class="more-details__label">
@@ -160,12 +160,12 @@
     </section>
     <section class="partnership-catalog">
       <div class="partnership partnership--modification">
-        <h3 class="partnership__text partnership__text--modification">приглашаем
+        <h3 class="partnership__text partnership__text--modification">приглашаем<br>
           к сотрудничеству
           дилеров!</h3>
-        <address class="partnership__adress partnership__adress--modification">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</address>
+          <address class="partnership__adress partnership__adress--br-mod partnership__adress--modification">ул. Большая
+            Конюшенная, д.<br> 19/8
+            <span class="partnership__adress partnership__adress--nottransfer partnership__adress--transfer">Санкт-<br>Петербург</span></address>
       </div>
     </section>
     <section class="map-form">
@@ -179,7 +179,8 @@
     </section>
     <footer class="footer">
       <div class="footer__conteiner">
-        <img class="footer__logo footer__logo--condition" width="" height="" src="img/footer-logo.svg" alt="Логотип Cat Energy">
+        <img class="footer__logo footer__logo--condition" width="128" height="24" src="img/footer-logo.svg"
+          alt="Логотип Cat Energy">
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
@@ -210,15 +211,16 @@
         </div>
         <a class="footer__academy-logo-link" href="#">
           <p class="footer__logo-text">HTML Academy</p>
-          <svg width="27" height="35" viewbox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite.svg#logo-academy" />
+          <svg class="footer__logo-svg" width="27" height="35" viewbox="0 0 27 35" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use href="img/sprite.svg#htmlacademy" />
           </svg>
 
         </a>
       </div>
     </footer>
   </main>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

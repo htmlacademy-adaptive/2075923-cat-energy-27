@@ -15,6 +15,7 @@
 
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -27,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    padding-top: 69px;
+    padding-top: 53px;
     width: 1220px;
     justify-content: space-between;
     z-index: 2;
@@ -38,8 +39,8 @@
       position: relative;
       top: 0;
       width: 1220px;
-      padding-top: 59px;
-      padding-bottom: 74px;
+      padding-top: 55px;
+      padding-bottom: 44px;
     }
   }
 }
@@ -58,6 +59,12 @@
     justify-content: space-between;
     width: 440px;
     margin: 0;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    width: 480px;
   }
 }
 
@@ -65,10 +72,12 @@
   display: block;
   background-color: transparent;
   width: 50px;
-  height: 50px;
-  padding: 10px;
+  height: 53px;
+  padding: 26px;
   border: none;
   position: relative;
+  cursor: pointer;
+
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -111,17 +120,30 @@
 .navigation__logo {
   display: flex;
   align-items: center;
+  margin-right: 50px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .navigation__header-conteiner {
   display: flex;
   width: 280px;
-  min-height: 66px;
+  min-height: 64px;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
   }
 }
 

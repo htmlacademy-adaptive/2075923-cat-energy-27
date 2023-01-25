@@ -1,7 +1,7 @@
 .catalog__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
@@ -12,7 +12,13 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-bottom: 82px;
+    padding-top: 51px;
+    padding-bottom: 71px;
     width: fit-content;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+    padding-bottom: 65px;
   }
 }
