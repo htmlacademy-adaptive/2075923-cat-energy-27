@@ -12,6 +12,14 @@
   padding-top: 19px;
   padding-bottom: 40px;
   cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 167px;
+  }
 }
 
 .footer__conteiner {
@@ -81,16 +89,25 @@
 }
 
 .footer__logo-text {
-  margin: 0;
   font-size: 16px;
+  margin: 0;
+  color: #444444;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-right: 27px;
-    padding-top: 16px;
+    margin-top: 18px;
   }
 }
 
 .footer__logo-svg {
+  fill: #666666;
+
+  &:hover,
+  &:focus,
+  &:active {
+    fill: #68b738;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 14px;
   }

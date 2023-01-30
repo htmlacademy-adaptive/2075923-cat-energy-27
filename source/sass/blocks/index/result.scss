@@ -70,15 +70,7 @@
 }
 
 .result__list {
-  display: flex;
-  justify-content: space-between;
-  width: 280px;
   margin: 0;
-  margin-left: 1px;
-
-  @media (min-width: $tablet-width) {
-    width: fit-content;
-  }
 }
 
 .result__title {
@@ -157,7 +149,13 @@
 }
 
 .result__specification-total-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
+    width: 709px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 68px;
