@@ -106,7 +106,6 @@
 .quality__title-link {
   grid-column: 1/-1;
   padding-top: 12px;
-  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
@@ -126,9 +125,6 @@
   grid-template-columns: 140px 140px;
 
   p {
-    padding-bottom: 16px;
-
-
     @media (min-width: $tablet-width) {
       padding: 0;
       margin-bottom: 24px;
@@ -144,7 +140,7 @@
     width: 632px;
     display: grid;
     grid-template-columns: 1fr 181px 43px;
-    padding-top: 26px;
+    padding-top: 14px;
     padding-bottom: 28px;
     align-items: flex-end;
     margin: 0 auto;
@@ -159,6 +155,6 @@
     margin: 0;
     padding: 0;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 14px;
   }
 }
