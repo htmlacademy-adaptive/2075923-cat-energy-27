@@ -13,7 +13,6 @@
   padding-left: 20px;
   padding-right: 20px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
@@ -56,7 +55,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 440px;
     margin: 0;
     padding-top: 8px;
@@ -153,8 +152,15 @@
   }
 }
 
-.navigation--nojs .navigation {
-  display: block;
-  position: static;
-  min-height: 0;
+.navigation--nojs .navigation__toogle {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

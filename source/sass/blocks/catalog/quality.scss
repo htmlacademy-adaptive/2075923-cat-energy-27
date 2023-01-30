@@ -54,54 +54,19 @@
 
 
 .quality__item {
-  display: grid;
-  margin-bottom: 19px;
-  border-top: 1px solid #cdcdcd;
-  grid-template-columns: 140px 140px;
+  position: relative;
 
-  span {
-    padding-bottom: 16px;
-
-
+  &:not(:last-child)::before {
     @media (min-width: $tablet-width) {
-      padding: 0;
-      margin-bottom: 24px;
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #cdcdcd;
+      bottom: 0;
     }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 10px;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    width: 632px;
-    display: grid;
-    grid-template-columns: 1fr 181px 43px;
-    padding-top: 26px;
-    padding-bottom: 28px;
-    align-items: flex-end;
-    margin: 0 auto;
-    margin-bottom: 1px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 895px;
-    display: grid;
-    grid-template-columns: 324px 244px 85px 244px;
-    align-content: flex-start;
-    margin: 0;
-    padding: 0;
-    padding-top: 15px;
-    padding-bottom: 17px;
   }
 }
-
-// .quality__item:last-child {
-//   @media (min-width: $tablet-width) {
-//     border-bottom: 1px solid #cdcdcd;
-//   }
-// }
 
 .quality__list {
   list-style-type: none;
@@ -155,16 +120,45 @@
 }
 
 .quality__item-conteiner {
-  position: relative;
+  display: grid;
+  margin-bottom: 19px;
+  border-top: 1px solid #cdcdcd;
+  grid-template-columns: 140px 140px;
 
-  &:not(:last-child)::before {
+  p {
+    padding-bottom: 16px;
+
+
     @media (min-width: $tablet-width) {
-      content: "";
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      background-color: #cdcdcd;
-      bottom: 0;
+      padding: 0;
+      margin-bottom: 24px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 632px;
+    display: grid;
+    grid-template-columns: 1fr 181px 43px;
+    padding-top: 26px;
+    padding-bottom: 28px;
+    align-items: flex-end;
+    margin: 0 auto;
+    margin-bottom: 1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 895px;
+    display: grid;
+    grid-template-columns: 324px 244px 85px 244px;
+    align-content: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
   }
 }

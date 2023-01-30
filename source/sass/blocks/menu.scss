@@ -37,6 +37,12 @@
     }
   }
 
+  &:not(:nth-child(3n)) {
+    @media (min-width: $tablet-width) {
+      margin-right: 33px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-bottom: 10px;

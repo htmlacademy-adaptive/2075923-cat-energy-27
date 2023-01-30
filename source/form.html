@@ -9,13 +9,16 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple-icon.png">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldmedium.woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
   <header class="main-header main-header--modification">
     <nav class="navigation navigation--close navigation--nojs navigation--catalog">
       <div class="navigation__header-conteiner">
-        <a class="navigation__logo logo" href="#">
+        <a class="navigation__logo logo" href="index.html" aria-label="ссылка на главную страницу сайта">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-cat-desc.svg" width="70" height="59">
             <source media="(min-width: 768px)" srcset="img/logo-cat-tablet.svg" width="60" height="50">
@@ -23,8 +26,9 @@
           </picture>
           <img class="logo__energy" src="img/logo-catenergy.svg" width="101" height="18" alt="Логотип Catenergy.">
         </a>
-        <button class="navigation__toogle" type="button"><span class="visually-hidden">Открыть
-            меню</span></button>
+        <button class="navigation__toogle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
       <ul class="navigation__list menu">
         <li class="menu__item menu__item--color">
@@ -40,8 +44,9 @@
     </nav>
   </header>
   <main class="form-page-main">
+    <h1 class="visually-hidden">Анкета подбора питания для котов.</h1>
     <section class="form">
-      <div class="form__wrapper">
+      <div class="form__headline-wrapper">
         <h2 class="form__headline">Подбор программы</h2>
         <p class="form__title">Заполните анкету, и мы подберем
           программу питания для вашего кота</p>
@@ -51,11 +56,13 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="inerview-name">ИМЯ:*</label>
-              <input class="form__input" type="text" id="inerview-name" name="inerview-name" placeholder="Барсик" required>
+              <input class="form__input" type="text" id="inerview-name" name="inerview-name" placeholder="Барсик"
+                required>
             </li>
             <li class="form__item">
               <label class="form__label" for="inerview-weight">Вес (кг):*</label>
-              <input class="form__input" type="number" id="inerview-weight" name="inerview-weight" placeholder="7" required>
+              <input class="form__input" type="number" id="inerview-weight" name="inerview-weight" placeholder="7"
+                required>
             </li>
             <li class="form__item">
               <label class="form__label" for="inerview-age">Возраст (лет):</label>
@@ -89,15 +96,15 @@
           </div>
         </div>
         <fieldset class="form__fieldset form__fieldset--contact-details">
-          <div class="сontact-details__wrapper">
+          <div class="form__wrapper сontact-details">
             <legend class="form__legend form__legend--сontact-details">Контактные данные<br>
               (владельца кота)</legend>
             <ul class="сontact-details__list">
               <li class="сontact-details__item">
-                <label class="form__label form__label--email" for="сontact-details-email" >E-mail:*</label>
+                <label class="form__label form__label--email" for="сontact-details-email">E-mail:*</label>
                 <input class="form__input form__input--email" type="email" id="сontact-details-email"
                   name="сontact-details-email" placeholder="kuklachev@gmail.com" required>
-                <svg class="form__input-iconemeil" width="20" height="20" viewbox="0 0 20 20" fill="none"
+                <svg class="form__input-iconemeil" width="20" height="20" viewbox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#email" />
                 </svg>
@@ -106,24 +113,24 @@
                 <label class="form__label form__label--tel" for="сontact-details-telephone">Телефон:*</label>
                 <input class="form__input form__input--tel" type="tel" id="сontact-details-telephone"
                   name="сontact-details-telephone" placeholder="8 (960) 900-60-90" required>
-                <svg class="form__input-icontel" width="20" height="20" viebox="0 0 20 20" fill="none"
+                <svg class="form__input-icontel" width="20" height="20" viewbox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite.svg#tel" />
+                  <use href="img/sprite.svg#phone" />
                 </svg>
               </li>
             </ul>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--comments">
-          <div class="сontact-details__wrapper">
-            <legend class="form__legend form__legend--comments">
+          <div class="form__wrapper">
+            <legend class="form__legend form__legend--comments form__wrapper">
               Комментарий</legend>
             <textarea class="form__comments" name="comment" required
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--more-details">
-          <div class="сontact-details__wrapper">
+          <div class="form__wrapper more-details">
             <legend class="form__legend form__legend--more-details">Дополнительно</legend>
             <ul class="more-details__list">
               <li class="more-details__item">
@@ -153,7 +160,7 @@
               </li>
             </ul>
             <button class="form__button button button--condition" type="submit">Отправить заявку</button>
-            <span class="form__note">* — Обязательные поля</span>
+            <p class="form__note">* — Обязательные поля</p>
           </div>
         </fieldset>
       </form>
@@ -163,9 +170,11 @@
         <h3 class="partnership__text partnership__text--modification">приглашаем<br>
           к сотрудничеству
           дилеров!</h3>
-          <address class="partnership__adress partnership__adress--br-mod partnership__adress--modification">ул. Большая
-            Конюшенная, д.<br> 19/8
-            <span class="partnership__adress partnership__adress--nottransfer partnership__adress--transfer">Санкт-<br>Петербург</span></address>
+        <address class="partnership__adress partnership__adress--br-mod partnership__adress--modification">ул. Большая
+          Конюшенная, д.<br> 19/8
+          <span
+            class="partnership__adress partnership__adress--nottransfer partnership__adress--transfer">Санкт-<br>Петербург</span>
+        </address>
       </div>
     </section>
     <section class="map-form">
@@ -184,35 +193,38 @@
         <div class="footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><span
-                  class="visually-hidden">Вконтакте.</span>
-                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="cсылка на вконтакте">
+                <span class="visually-hidden">Вконтакте.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#vkontakte" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span
-                  class="visually-hidden">Ютуб.</span>
-                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+                aria-label="cсылка на ютуб">
+                <span class="visually-hidden">Ютуб.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#youtube" />
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><span
-                  class="visually-hidden">Телеграм.</span>
-                <svg width="28" height="22" viewbox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"
+                aria-label="cсылка на телеграм">
+                <span class="visually-hidden">Телеграм.</span>
+                <svg width="28" height="22" viewbox="0 0 28 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#telegram" />
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <a class="footer__academy-logo-link" href="#">
+        <a class="footer__academy-logo-link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="ссылка на сайт HTML Academy">
           <p class="footer__logo-text">HTML Academy</p>
-          <svg class="footer__logo-svg" width="27" height="35" viewbox="0 0 27 35" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
+          <svg class="footer__logo-svg" width="27" height="35" viewbox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
             <use href="img/sprite.svg#htmlacademy" />
           </svg>
 

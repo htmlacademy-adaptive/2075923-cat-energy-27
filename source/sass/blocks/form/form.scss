@@ -69,19 +69,23 @@
   }
 
   &--comments {
+    padding-top: 5px;
+
     @media (min-width: $tablet-width) {
-      padding-top: 66px;
+      padding-top: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 50px;
+      padding-top: 27px;
     }
   }
 
   &--more-details {
+    padding-top: 5px;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 64px;
-      padding-top: 64px;
+      padding-top: 42px;
     }
 
     @media (min-width: $desktop-width) {
@@ -215,7 +219,7 @@
 
   &:focus,
   &:active {
-    border: 2px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
   }
 
   &--tel,
@@ -235,12 +239,11 @@
   }
 }
 
-.form__wrapper {
+.form__headline-wrapper {
   width: 280px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -287,32 +290,28 @@
   }
 
   &--comments {
-    top: -20px;
-
     &::before {
       content: "";
       position: absolute;
       width: 100%;
       height: 2px;
       background-color: #68b738;
-      top: 43px;
+      top: 19px;
       z-index: -1;
 
       @media (min-width: $tablet-width) {
-        top: 87px;
+        top: 67px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 72px;
+        top: 48px;
       }
     }
   }
 
   &--more-details {
-    top: -23px;
-
     @media (min-width: $tablet-width) {
-      margin-bottom: 33px;
+      margin-bottom: 54px;
     }
 
     &::before {
@@ -321,15 +320,15 @@
       width: 100%;
       height: 2px;
       background-color: #68b738;
-      top: 43px;
+      top: 19px;
       z-index: -1;
 
       @media (min-width: $tablet-width) {
-        top: 87px;
+        top: 64px;
       }
 
       @media (min-width: $desktop-width) {
-        top: 89px;
+        top: 65px;
       }
     }
   }
@@ -358,7 +357,7 @@
 
   &:focus,
   &:active {
-    border: 2px solid #444444;
+    box-shadow: 0 0 0 2px #444444;
   }
 
   @media (min-width: $tablet-width) {
@@ -396,6 +395,17 @@
   }
 }
 
+.form__input-iconemeil {
+  fill: none;
+  stroke: #000000;
+}
+
+.form__input-icontel {
+  fill: none;
+  stroke: #000000;
+}
+
+
 .form__input--email + .form__input-iconemeil {
   position: absolute;
   right: 16px;
@@ -427,5 +437,27 @@
   @media (min-width: $desktop-width) {
     padding-bottom: 55px;
     padding-top: 19px;
+  }
+}
+
+.form__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }

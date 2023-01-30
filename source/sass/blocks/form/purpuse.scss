@@ -46,6 +46,11 @@
   border-radius: 50%;
   border: 1px solid #cdcdcd;
 
+  &:hover,
+  &:focus {
+    border-color: rgba(186, 186, 186, 1);
+  }
+
   @media (min-width: $tablet-width) {
     width: 38px;
     height: 37px;
