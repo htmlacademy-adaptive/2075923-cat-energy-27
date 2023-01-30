@@ -2,7 +2,7 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
-  background-image: url("../img/cat-main-cover.jpeg");
+  background-image: url("../img/cat-main-cover.jpg");
   background-repeat: no-repeat;
   top: 0;
   background-position: center top;
@@ -23,7 +23,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     width: 100%;
-    background-image: url("../img/cat-main-cover-big.jpeg");
+    background-image: url("../img/cat-main-cover-big.jpg");
     background-repeat: no-repeat;
     top: 0;
     background-position: right top;

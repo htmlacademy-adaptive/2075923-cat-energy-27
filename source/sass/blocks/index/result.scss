@@ -153,6 +153,7 @@
   flex-wrap: wrap;
   width: 280px;
   justify-content: space-between;
+
   @media (min-width: $tablet-width) {
     width: 709px;
     display: flex;

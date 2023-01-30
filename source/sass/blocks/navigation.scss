@@ -48,9 +48,13 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (max-width: 320px) {
+  @media (min-width: 300px) and(max-width: 767px) {
     background-color: #ffffff;
     width: 100%;
+    position: absolute;
+    z-index: 2;
+    top: 64px;
+    left: 0;
   }
 
   @media (min-width: $tablet-width) {
@@ -136,6 +140,7 @@
   min-height: 64px;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -159,6 +164,8 @@
 .navigation--nojs .navigation__list {
   display: flex;
   flex-direction: column;
+  position: relative;
+  top: 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
